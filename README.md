@@ -5,6 +5,7 @@
 |----|----|
 |img/|Folder for required image files (see the next section)|
 |pb3{fm,psg}.asm|Assembler source of pg3{fm,psg}.bin|
+|pb3{fm,psg}.bin|KSS init routine binary|
 |pb3{fm,psg}.hed|KSS header binary|
 |pb3{fm,psg}.bat|batch to generate fm.kss|
 |pb3{fm,psg}.pls|playlist file for Winamp (Japanese Shift-JIS)|
@@ -28,7 +29,7 @@ Then run the following batch files from Windows Command Prompt to create .kss fi
 This is advanced topic for, not required if you want to build just .kss files.
 
 ## 1. Prepare ZASM assembler
-[ZASM for Windows](https://www.vector.co.jp/soft/dos/prog/se010314.html) is required to compile pb3{fm,psg}.asm to pb3{fm,psg}.bin. ZASM is very old MS-DOS application so [MS-DOS Player](http://takeda-toshiya.my.coocan.jp/msdos/) can be used to generate ZASM for your Windows 10 environment.
+[ZASM for Windows](https://www.vector.co.jp/soft/dos/prog/se010314.html) is required to compile pb3{fm,psg}.asm to pb3{fm,psg}.bin. ZASM is very old MS-DOS application so it can not directly work on Windows 10. [MS-DOS Player](http://takeda-toshiya.my.coocan.jp/msdos/) can be used to generate a wrapper ZASM  executable for your Windows 10 environment.
 
 ```
 \pb3kss> msdos -Czasm64.exe ZASM.EXE
