@@ -1,2 +1,4 @@
 *.dsk
 *.com
+*.hex
+img/*.bin
